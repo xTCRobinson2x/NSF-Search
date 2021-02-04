@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Search</title>
+	
+</head>
+<body>
+	<h1>Search</h1>
+	<form action = "testing.php" method = "post" >
+		<table>
+			<tr><td>Award Number:</td>
+				<td><input type = "text" size = "40" name = "AwardNum"></td>
+			</tr>
+			<tr><td>Principal Investigator:</td>
+				<td><input type = "text" size = "40" name = "PrincipalInvestigator"></td>
+			</tr>
+			<tr><td>Institution:</td>
+				<td><input type = "text" size = "40" name = "Institution"></td>
+			</tr>
+			<!--https://www.w3schools.com/tags/att_option_value.asp-->
+			<tr><td>Search By:</td>
+				<td>
+				<select id="searchBy" name="searchBy">
+				 <option value="AwardNum">Award Number</option>
+				 <option value="PrincipalInvestigator">Principal Investigator</option>
+				 <option value="Institution">Institution</option>
+				</select>
+			</td>
+			</tr>
+			<input type ="hidden" name="flag" value= 0>
+
+			<tr><td><input type = "submit" value = "Search"></td>
+				<td>
+				</form>
+			</td>
+			</tr>
+		</table>
+	
+</body>
+</html>
